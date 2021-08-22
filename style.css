@@ -1,7 +1,5 @@
  body {
-  background-image: url('Hearts.png');
   background-color: pink;
-  background-repeat: no-repeat;
  }
 
  input {
@@ -14,9 +12,9 @@
  }
 
   .members-list {
-    color: white;
+    color: black;
   }
 
   .members-count {
-    color: white;
+    color: black;
   }
