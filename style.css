@@ -1,7 +1,22 @@
  body {
+  background-image: url('Hearts.png');
   background-color: pink;
+  background-repeat: no-repeat;
  }
 
- members-list {
-  color: #FF00B3;
+ input {
+  color: black;
  }
+
+  .message-form__input {
+  color: white;
+  background-color: white;
+ }
+
+  .members-list {
+    color: white;
+  }
+
+  .members-count {
+    color: white;
+  }

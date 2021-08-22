@@ -20,7 +20,7 @@
     .members-count,
     .members-list,
     .messages {
-      border: 3px solid #E58BE1;
+      border: 3px solid white;
       padding: 15px;
       margin-bottom: 15px;
     }
@@ -45,11 +45,12 @@
     .message-form {
       display: flex;
       flex-shrink: 0;
+      color: white;
     }
     .message-form__input {
       flex-grow: 1;
-      border: 3px solid #E58BE1;
-      background-color: #FFE9FE;
+      border: 3px solid white;
+      background-color
       padding: 10px 15px;
       font-size: 16px;
     }
@@ -62,7 +63,7 @@
 <body>
   <div class="members-count">-</div>
   <div class="members-list">-</div>
-  <div class="messages"></div>
+  <div class="messages" style="color: white;"></div>
   <form class="message-form" onsubmit="return false;">
     <input class="message-form__input" placeholder="Type a message.." type="text"/>
     <input class="message-form__button" value="Send" type="submit"/>
