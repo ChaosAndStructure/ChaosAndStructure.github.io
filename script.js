@@ -3,7 +3,6 @@ const CLIENT_ID = 'ffhasCsY7JaLppyd';
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
     name: getRandomName(),
-    color: getRandomColor(),
   },
 });
 
@@ -64,10 +63,6 @@ function getRandomName() {
     "_" +
     nouns[Math.floor(Math.random() * nouns.length)]
   );
-}
-
-function getRandomColor() {
-  return '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
 }
 
 //------------- DOM STUFF
