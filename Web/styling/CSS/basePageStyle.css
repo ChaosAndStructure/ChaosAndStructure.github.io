@@ -1,0 +1,87 @@
+@font-face {
+    font-family: terminal;
+    src: url(fonts/terminalFont.ttf);
+  }
+
+/* Animation For Blinking Of The Insert Symbol */
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+  
+  #blinky {
+    animation: blinker 1s linear infinite;
+  }
+
+  body {
+    min-height: 97vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  textarea:focus, input:focus{
+    outline: none;
+  }
+  
+  html {
+    font-family: terminal;
+    color: rgb(30, 164, 54);
+    background: #101110;
+    font-size: 155%;
+      
+  }
+  
+  #title {
+      text-align: center;
+      margin-bottom: 0;
+  }
+  
+  #titleSubText {
+    text-align: center;
+    margin-top: 0;
+    font-size: 90%;
+    margin-bottom: 3%;
+  }
+  
+  hr{
+    background-color: rgb(30, 164, 54);
+    border: none;
+    height: 2px;
+    width: 60%;
+    
+  }
+  
+  #wrapperCenter {
+    margin-top: 0;
+    width: 500px;
+    overflow: hidden; /* will contain if #first is longer than #second */
+    margin: auto;
+  }
+  
+  /* Making sure that link also stay green and without extra decorations */ 
+  .link {
+    color: rgb(30, 164, 54);
+    text-decoration: none;
+  }
+  
+  #copyright {
+    font-size: 60%;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  #commandInsert {
+    text-align: left;
+    margin-top: 0;
+    font-size: 90%;
+    margin-bottom: 3%;
+    background-color: transparent;
+    border: none;
+    color:rgb(30, 164, 54);
+    font-family: terminal;
+  }
+  
+  #userInput {
+    text-align: center;
+  }

@@ -1,0 +1,47 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(30, 164, 54);
+    background: #101110;
+    font-size: 155%;
+}
+
+/* This is our top navigation bar (the little bar on top of the webpage containing "buttons") */
+.topnav {
+    background-color: rgb(30, 164, 54);
+    overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-shadow: none;
+}
+
+/* When we hover over the buttons change background, font, color, ect... */
+.topnav a:hover {
+  background-color: rgb(241, 171, 185);
+  color: rgb(255, 255, 255);
+  text-shadow: none;
+}
+
+/* The 'active' class makes it so that for example the home button is always a certain color */ 
+.topnav a.active {
+  background-color: rgb(219, 146, 160);
+  color: white;
+}
+
+.title {
+    text-align: center;
+}
+
+.introText {
+    text-align: center;
+}
+
+.gameOverview {
+    text-align: center;
+}
