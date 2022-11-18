@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos And Structure</title> <!-- Sick Title Here -->
+
+    <!-- This is where we link (AKA: import ) the CSS file and the JS file so it works in our HTML file -->
+    <link rel="stylesheet" href="styling/CSS/game.css">
+    <script defer src="js/data/frame.js"></script>
+    <script defer src="js/data/scene.js"></script>
+    <script defer src="js/data/script.js"></script> 
+    <script defer src="js/game.js"></script> <!-- Main JavaScript for the game -->
+</head>
+
+<body id="body" onkeydown="continueFunc(), backFunc()">
+
+    <div id="mainBox">
+        <div id="textBoxWrapper">
+            <div id="textBox">
+                <h1 id="nameChar">Name</h1>
+                <p id="textHolder">Gay</p>
+                <p onload="showChoiceBox()" id="pageNum">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="characters">
+        <div id="leftChar">
+            <img id="leftCharImg" src="">
+        </div>
+
+        <div id="midChar">
+            <img id="midCharImg" src="">
+        </div>
+
+        <div id="rightChar">
+            <img id="rightCharImg" src="">
+        </div>
+    </div>
+
+    <div id="choiceBox">
+        <button id="button1" class="buttons" onclick="chosenOption(this.id)"></button><br>
+        <button id="button2" class="buttons" onclick="chosenOption(this.id)"></button><br>
+        <button id="button3" class="buttons" onclick="chosenOption(this.id)"></button><br>
+        <button id="button4" class="buttons" onclick="chosenOption(this.id)"></button>
+    </div>
+
+    <div id="blur"></div>
+</body>
+</html>
